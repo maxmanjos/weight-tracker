@@ -1,4 +1,5 @@
 body {
+  font-family: "Gruppo", serif;
   background-image: linear-gradient(to bottom, #fdfcfb, #e2d1c3);
   display: flex;
   justify-content: center;
@@ -23,7 +24,6 @@ body {
 }
 
 .app button {
-  font-family: Georgia, "Times New Roman", Times, serif;
   font: bolder;
   padding-inline: 60px;
   margin-bottom: 18px;
@@ -70,6 +70,8 @@ body {
 }
 
 .last-weight h3 {
+  font-size: 25px;
+  font-style: bold;
   margin-top: 2px;
   margin-bottom: 5px;
 }
@@ -89,10 +91,6 @@ body {
   align-items: center;
   justify-content: center;
   gap: 17px;
-}
-
-.heading .graph {
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .heading p {
@@ -121,6 +119,16 @@ body {
   border-radius: 4px;
 }
 
+#date,
+#weight {
+  font-weight: bold;
+}
+
+input,
+label {
+  font-weight: bold;
+}
+
 #date-input {
   width: 105px;
   height: 30px;
@@ -140,7 +148,6 @@ body {
 
 #pop-up {
   padding-top: 25px;
-  font-family: Georgia, "Times New Roman", Times, serif;
   display: none;
   flex-direction: column;
   align-items: center;
@@ -156,8 +163,7 @@ body {
 
 #popup-btn {
   margin-top: 50px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font: bolder;
+  font-weight: bolder;
   padding-inline: 60px;
   margin-bottom: 18px;
   font-size: 25px;
