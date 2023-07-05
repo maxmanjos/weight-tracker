@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
+    <title>Weight-Tracker</title>
+    
+  </head>
+  <body>
+    
+    </div>
+    <div class="container">
+      <div class="app">
+        <div class="heading">
+          <h1>Welcome to Weight Tracker</h1>
+          <p>
+            <i>
+              <strong>The tool to help you acheive your fitness
+              goals!</i
+            ></strong>
+          </p>
+
+          <div class="graph">
+            <canvas id="data">graph visualization</canvas>
+        
+            <div class="last-weight">
+              <h3>your previous weigh-in</h3>
+              <div id="display-date-weight">
+                <i class="fa fa-calendar"></i>
+                <div id="date">6/26/2023</div>
+                <i class="fa fa-weight" id="w-icon"></i>
+                <div id="weight">186 lbs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button">
+          <button id="btn">Record Weight</button>
+        </div>
+      </div>
+    </div>
+    <div id="blurred">
+      <div id="pop-up">
+        <div class="prompts">
+         <div id="date">
+           <label>Date:</label>
+           <input type="date" id="date-input">
+         </div>
+         <div id="weight">
+           <label>Weight:</label>
+           <input type="number" id="weight-input">
+         </div>
+        </div>
+        <btn id="popup-btn">Log</btn>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.0/dist/chart.umd.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
