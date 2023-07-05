@@ -104,6 +104,7 @@ body {
 }
 
 .prompts {
+  margin-right: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,7 +114,8 @@ body {
 }
 
 #weight-input {
-  width: 50px;
+  width: 105px;
+  margin-right: 10px;
   height: 30px;
   border: 1px solid black;
   border-radius: 4px;
@@ -136,7 +138,7 @@ label {
   border-radius: 4px;
 }
 #blurred {
-  display: none;
+  display: flex;
   z-index: 1;
   height: 100vh;
   width: 100vw;
@@ -148,7 +150,7 @@ label {
 
 #pop-up {
   padding-top: 25px;
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -162,7 +164,7 @@ label {
 }
 
 #popup-btn {
-  margin-top: 50px;
+  margin-top: 20px;
   font-weight: bolder;
   padding-inline: 60px;
   margin-bottom: 18px;
