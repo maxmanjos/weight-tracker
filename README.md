@@ -10,3 +10,4 @@ a chart representation of their progress. This app is designed to help users hol
 their weight gain or loss journey.
 
 uses localStorage to store users data and pulls from that dataset to update the chart.
+implements a chart using chartJS.
