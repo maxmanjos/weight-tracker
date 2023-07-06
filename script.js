@@ -77,8 +77,13 @@ const addWeight = () => {
   let weight = parseInt(document.querySelector("#weight-input").value);
 
   weights.weights.push({
-    day: new Date(day).toISOString(),
+    day: new Date(day).toISOString().split("T")[0],
     weight: weight,
+  });
+
+  //sorts dates in case user enters date from the past
+  weights.weights.sort(function (a, b) {
+    return new Date(a.day) - new Date(b.day);
   });
 
   if (weight) {
@@ -90,6 +95,7 @@ const addWeight = () => {
   }
 };
 
+//checks if key exists in localStorage
 const manageLocalStorage = () => {
   weights = JSON.parse(localStorage.getItem("weights"));
   if (!weights) {
