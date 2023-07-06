@@ -87,9 +87,9 @@ const addWeight = () => {
   });
 
   if (weight) {
-    localStorage.setItem("weights", JSON.stringify(weights));
     document.querySelector("#weight").innerHTML = weight;
     document.querySelector("#date").innerHTML = day;
+    localStorage.setItem("weights", JSON.stringify(weights));
     linechart.update("reset");
     linechart.update("show");
   }
