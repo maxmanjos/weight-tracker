@@ -1,6 +1,7 @@
 let linechart;
-
 let weights; //dataset
+
+let firstWeight;
 
 //generate chart
 window.addEventListener("load", () => {
@@ -92,6 +93,9 @@ const addWeight = () => {
     localStorage.setItem("weights", JSON.stringify(weights));
     linechart.update("reset");
     linechart.update("show");
+    //update progress
+    document.querySelector("#prog").innerHTML =
+      "You have gained / lost a total of: " + getProgress(weight) + " lbs";
   }
 };
 
@@ -103,3 +107,14 @@ const manageLocalStorage = () => {
     weights = { weights: [] };
   }
 };
+
+//returns the difference in users progress from first weigh-in
+
+function getProgress(weight) {
+  if (firstWeight == null) {
+    firstWeight = weight;
+    return 0;
+  } else {
+    return weight - firstWeight;
+  }
+}
