@@ -8,6 +8,3 @@ to do it for me.
 Weight tracker is a simple program that allows users to input their weights on certain days and presents
 a chart representation of their progress. This app is designed to help users hold themselves accountable on
 their weight gain or loss journey.
-
-uses localStorage to store users data and pulls from that dataset to update the chart.
-Implements a chart using chartJS.
